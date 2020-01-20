@@ -246,6 +246,8 @@ img {
 		position: absolute;
 		top: 7.785vw;
 		background: #303e47;
+		padding-top: 10px;
+		border-top: 1px solid #465c69;
 		z-index: 1000;
 		margin: 0 0;
 		width: 100%;
@@ -256,11 +258,9 @@ img {
 		display: none;
 		min-width: 100%;
 		position: relative;
-		/* z-index: 1000; */
 		text-align: left;
 		box-shadow: none;
 		right: 0px;
-		/* top: 3vw; */
 	  }
 
 	.main-header {
