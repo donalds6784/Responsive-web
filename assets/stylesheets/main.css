@@ -65,10 +65,9 @@ Custom style
 */
 
 .main-header {
-	padding: 1.1vw 0;
+	padding: 1.9vw 0;
 	background: #303e47;
 	position: relative;
-	padding: 1.1vw 0;
 }
 
 .logo {
@@ -244,9 +243,9 @@ img {
 	}
 	.nav-modifier{
 		position: absolute;
-		top: 7.785vw;
+		top: 8.585vw;
 		background: #303e47;
-		padding-top: 10px;
+		padding: 10px 0;
 		border-top: 1px solid #465c69;
 		z-index: 1000;
 		margin: 0 0;
@@ -264,7 +263,7 @@ img {
 	  }
 
 	.main-header {
-		height: 8vw;
+		height: 8.5vw;
 	}
 
 	/* Responsive nav */
@@ -276,7 +275,7 @@ img {
 	position: absolute;
 	display: inline-block;
 	left: 90%;
-	top: 1%;
+	top: 10%;
 	}
 
 
@@ -285,6 +284,10 @@ img {
 	width: 100%;
 	background: #fff;
 	margin-top: 4px;
+	}
+
+	.close {
+
 	}
 
 	.nav-modifier ul {
