@@ -241,9 +241,15 @@ img {
 		margin-left: 0px;
 		
 	}
+
+	.logo {
+		/* position: absolute; */
+		top: 22%;
+	}
+	
 	.nav-modifier{
 		position: absolute;
-		top: 8.585vw;
+		top: 11.585vw;
 		background: #303e47;
 		padding: 10px 0;
 		border-top: 1px solid #465c69;
@@ -263,7 +269,7 @@ img {
 	  }
 
 	.main-header {
-		height: 8.5vw;
+		height: 12vw;
 	}
 
 	/* Responsive nav */
@@ -275,7 +281,7 @@ img {
 	position: absolute;
 	display: inline-block;
 	left: 90%;
-	top: 10%;
+	top: 20%;
 	}
 
 
