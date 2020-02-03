@@ -83,6 +83,9 @@ Custom style
 	min-width: 40px;
 }
 
+.nav-modifier {
+	display: inline-block;
+}
 .main-nav ul {
 	display: flex;
 	flex-direction: row;
