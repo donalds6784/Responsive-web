@@ -3,7 +3,9 @@
 @import url(reset.css);
 
 
-
+:root {
+	--main-bg-color: linear
+}
 /* custom css */
 body,
 html {
@@ -98,6 +100,10 @@ Custom style
 	
 }
 
+/*===================================
+		 Drop down Nav
+====================================*/
+
 .drop-down {
 	display: inline-block;
 	/* position: relative; */
@@ -116,7 +122,7 @@ Custom style
 
 .drop-down-content li {
 	background: #303e47;
-	border-top: 1px solid #fff;
+	border-top: 1px solid rgb(210, 224, 241);
 	
 }
 
@@ -245,6 +251,7 @@ img {
 	.logo {
 		/* position: absolute; */
 		top: 22%;
+		left: 2%;
 	}
 	
 	.nav-modifier{
@@ -257,6 +264,8 @@ img {
 		margin: 0 0;
 		width: 100%;
 		left: 0px;
+		display: none;
+		animation: cubic-bezier(0.19, 1, 0.22, 1)
 	}
 
 	.drop-down .drop-down-content ul {
@@ -274,7 +283,7 @@ img {
 
 	/* Responsive nav */
 
-	.main-header div.nav-colapse {
+	.main-header div.nav-collapse {
 	/* background: #fff; */
 	width: 1.7rem;
 	height: 1.7rem;
@@ -285,16 +294,38 @@ img {
 	}
 
 
-	div.nav-colapse .toggle-lines {
+	div.nav-collapse .toggle-lines {
 	height: 5px;
 	width: 100%;
 	background: #fff;
 	margin-top: 4px;
 	}
 
-	.close {
-
+	div.open .toggle-line-1 {
+		transform: rotate(-45deg) translate(-5px, 8px);
 	}
+
+	div.open .toggle-line-2 {
+		opacity: 0;
+	}
+
+	div.open .toggle-line-3 {
+		transform: rotate(45deg) translate(-5px, -8px);
+	}
+
+	div.open .toggle-line-1,
+	div.open .toggle-line-2,
+	div.open .toggle-line-3 {
+		transition: .6s cubic-bezier(0.47, 0, 0.745, 0.715);
+	}
+
+
+
+
+
+
+
+	
 
 	.nav-modifier ul {
 		flex-direction: column;
@@ -303,5 +334,7 @@ img {
 	.nav-modifier ul li {
 		padding: 10px 10px;
 	}
+
+
 
 }
