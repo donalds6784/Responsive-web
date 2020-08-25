@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* @import url('reset.css'); */
+
+
+
+/* custom css */
+
+body {
+	font: 300 16px/150% var(--font-family);
+	background: var(--base-gradient);
+}
+
+
+
+.gallary {
+	padding: 2rem 0;
+	/* background: rgb(8, 128, 184); */
+}
+
+.gallary h1 {
+	font-size: 3vw;
+	line-height: 5vw;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.gallary .grid-container .grid-items img {
+	/* max-width: 20rem; */
+	width: 100%;
+	height: auto;
+	max-height: 17.75rem;
+	min-width: 100%;
+	/* min-height: 12rem; */
+
+
+}
+.gallary .grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15.75rem, 2fr));
+	grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
+	gap: 1vw 1vw;
+}
+
+.gallary .grid-container .grid-items {
+	background: var(--main-bg-color);
+	text-align: center;
+	transition: all 1s ease-in;
+}
+
+.gallary .grid-container .grid-items:hover {
+	transform: scale(1.01);
+}
+
+.gallary .grid-container .grid-items > p {
+	font-size: .9rem;
+	padding: .5rem .5rem;
+}
+
